@@ -10,6 +10,9 @@ sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
 # Устанавливаем MySQL
 yum --enablerepo=mysql80-community install mysql-community-server
 
+wget https://raw.githubusercontent.com/evgeniy-romanov/backup/main/my.cnf1
+mv /root/my.cnf1 /etc/my.cnf
+
 # Запускаем mysqld
 systemctl start mysqld
 systemctl enable mysqld
