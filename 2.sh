@@ -1,4 +1,4 @@
-#2.sh# для  мастера всё и для слейва без wordpress
+#2.sh#Установка mysql 8.0 и wordpress на master
 #Все работает, далее удаляем под установку wordpress
 rm -rf /var/www/html/wordpress/index.php
 #Устанавливаем ключ для mysql, что бы не было ошибки с GPG-ключом
